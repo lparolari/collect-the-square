@@ -3,11 +3,16 @@
     <script src="./src/index.ts"></script>
   </head>
   <body>
-    <h1>Working!</h1>
+    <h1>Collect The Square</h1>
+    <p>Use W, A, S, D to move. X to quit. Z to toggle bouding box. "," and "." to decrease, increase speed.</p>
+    <p>Collect how many squares as you can in 30 seconds!</p>
+    <canvas id="canvas" width="300" height="300" style="border: 5px solid black;">
 
-    <p>
-      Add here your HTML component with an id and start playing with
-      JavaScript/TypeScript.
-    </p>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) { 
+        app.init();
+        app.start();
+      });
+    </script>
   </body>
 </html>
